@@ -1,0 +1,53 @@
+@use 'variables' as *;
+@use 'header';
+@use 'footer';
+@use 'products';
+@use 'form';
+@use 'responsive';
+
+// Estilos base del sitio
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  background-color: $background-color;
+  color: $text-color;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: $secondary-color;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+// Enlace para saltar contenido
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $highlight-color;
+  color: $background-color;
+  padding: 8px;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// Accesibilidad visual
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid $highlight-color;
+  outline-offset: 2px;
+}

@@ -1,0 +1,50 @@
+
+
+@media (max-width: 768px) {
+    // Menú de navegación adaptativo
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    // Productos en columna para móvil
+    .products {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+  
+      .product {
+        text-align: center;
+  
+        img {
+          width: 80%;
+          max-width: 300px;
+          height: auto;
+        }
+  
+        p {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  
+    // Formulario responsivo
+    form {
+      padding: 1rem;
+  
+      input, textarea, button {
+        font-size: 1rem;
+      }
+    }
+  
+    // Mejor visibilidad del skip-link en móviles
+    .skip-link {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  

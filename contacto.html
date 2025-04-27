@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Accesibilidad Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <div class="container">
+    <header>
+      <h1>Contacto</h1>
+      <nav role="navigation" aria-label="Menú principal">
+        <a href="index.html" aria-label="Ir a la página de inicio">Inicio</a>
+        <a href="contacto.html" aria-label="Ir a la página de contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section>
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="nombre">Nombre completo:</label>
+            <input id="nombre" name="nombre" type="text" required tabindex="1" placeholder="Ingresa tu nombre completo">
+          </div>
+          <div>
+            <label for="email">Correo electrónico:</label>
+            <input id="email" name="email" type="email" required tabindex="2" placeholder="Ingresa tu correo electrónico">
+          </div>
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required tabindex="3" placeholder="Escribe tu mensaje aquí"></textarea>
+          </div>
+          <button type="submit" aria-label="Enviar el formulario de contacto" tabindex="4">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lentes para Todos</p>
+    </footer>
+  </div>
+</body>
+</html>

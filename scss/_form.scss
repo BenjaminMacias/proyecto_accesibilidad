@@ -1,0 +1,47 @@
+@use "sass:color";
+@use 'variables' as *;
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  
+  div {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background-color: $accent-color;
+    color: $secondary-color;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: color.adjust($accent-color, $lightness: -10%);
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      outline: 2px solid $highlight-color;
+      outline-offset: 2px;
+    }
+  }
+}

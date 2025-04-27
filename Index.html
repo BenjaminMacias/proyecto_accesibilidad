@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio - Accesibilidad Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <div class="container">
+    <header>
+      <h1>Lentes para todos</h1>
+      <nav role="navigation" aria-label="Menú principal">
+        <a href="index.html" aria-label="Ir a la página de inicio">Inicio</a>
+        <a href="contacto.html" aria-label="Ir a la página de contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section>
+        <h2>Bienvenidos</h2>
+        <p>Encuentra los mejores lentes para cualquier ocasión.</p>
+      </section>
+
+      <section class="products" role="region" aria-label="Galería de productos de lentes">
+        <h2>Nuestros Productos</h2>
+        <div class="product">
+          <img src="img/lentes_sol.jpg" alt="Lentes de sol modernos con protección UV">
+          <p>Lentes de sol: Estilo y protección UV para tus días soleados.</p>
+        </div>
+        <div class="product">
+          <img src="img/lentes_opticos.jpg" alt="Lentes ópticos de armazón ligero">
+          <p>Lentes ópticos: Diseño cómodo y elegante para tu día a día.</p>
+        </div>
+        <div class="product">
+          <img src="img/lentes_deportivos.jpg" alt="Lentes deportivos resistentes al impacto">
+          <p>Lentes deportivos: Resistencia y comodidad para actividades intensas.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lentes para Todos</p>
+    </footer>
+  </div>
+</body>
+</html>

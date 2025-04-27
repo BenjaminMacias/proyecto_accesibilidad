@@ -1,0 +1,19 @@
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    .product {
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  
